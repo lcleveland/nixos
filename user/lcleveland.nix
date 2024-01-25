@@ -7,6 +7,6 @@
   };
 
   home-manager.users.lcleveland = {
-    home.stateVersion = "18.09";
+    home.stateVersion = "23.11";
   };
 }
