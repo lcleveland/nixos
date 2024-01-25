@@ -8,5 +8,8 @@
 
   home-manager.users.lcleveland = {
     home.stateVersion = "23.11";
+    home.packages = with pkgs; [
+      firefox
+    ];
   };
 }
