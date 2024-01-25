@@ -10,6 +10,7 @@
     ../app/neovim.nix
     ../system/wm/kde_plasma.nix
     ../user/lcleveland.nix
+    ../system/state_version.nix
   ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
