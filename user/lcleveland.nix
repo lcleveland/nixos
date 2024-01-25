@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  users.user.lcleveland = {
+  users.users.lcleveland = {
     isNormalUser = true;
     description = "Lyle Cleveland";
     extraGroups = [ "networkmanager" "wheel" ];
