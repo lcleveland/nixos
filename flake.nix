@@ -9,6 +9,7 @@
     nixosConfigurations = {
       nixos =
         nixpkgs.lib.nixosSystem {
+          specialArgs = inputs;
           modules = [ ./profile/base.nix ];
         };
     };
