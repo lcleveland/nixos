@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
+    /etc/nixos/hardware-configuration.nix
     ../system/boot.nix
     ../system/locale.nix
     ../system/networking.nix
