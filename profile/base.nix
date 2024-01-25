@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  modules = [
+  imports = [
     ../system/boot.nix
     ../system/locale.nix
     ../system/networking.nix
