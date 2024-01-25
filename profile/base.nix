@@ -1,8 +1,5 @@
 { config, pkgs, ... }:
 {
-  imports = [
-    /etc/nixos/hardware-configuration.nix
-  ];
   modules = [
     ../system/boot.nix
     ../system/locale.nix
