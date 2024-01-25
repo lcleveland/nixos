@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
   };
 
-  outputs = { self, nixpkgs }: {
+  outputs = inputs@{ self, nixpkgs }: {
     nixosConfigurations = {
       nixos =
         nixpkgs.lib.nixosSystem {
