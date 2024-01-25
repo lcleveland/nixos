@@ -3,6 +3,6 @@
   users.user.lcleveland = {
     isNormalUser = true;
     description = "Lyle Cleveland";
-    extraGroups = [ networkmanager wheel ];
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 }
