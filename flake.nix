@@ -11,7 +11,7 @@
         nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = inputs;
-          modules = [ ./profile/base.nix ];
+          modules = [ ./profile/plasma/home.nix ];
         };
     };
   };
