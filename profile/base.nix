@@ -14,6 +14,4 @@
   ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
-  home-manager.useGlobalPkgs = true;
-  home-manager.useUserPackages = true;
 }
