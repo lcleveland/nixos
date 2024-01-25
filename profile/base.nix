@@ -7,6 +7,7 @@
     ../system/time.nix
     ../system/sound.nix
     ../app/neovim.nix
+    ../system/wm/kde_plasma.nix
   ];
   nix.settings.experimental-features = [ nix-command flakes ];
   nixpkgs.config.allowUnfree = true;
