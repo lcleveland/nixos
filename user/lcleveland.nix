@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, home-manager, ... }:
 {
   users.users.lcleveland = {
     isNormalUser = true;
