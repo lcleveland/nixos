@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 {
   networking.hostName = "nixos";
-  networking.networkManager.enable = true;
+  networking.networkmanager.enable = true;
 }
