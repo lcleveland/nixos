@@ -10,6 +10,8 @@
     home.stateVersion = "23.11";
     home.packages = with pkgs; [
       firefox
+      import
+      ../home/app/floorp.nix
     ];
   };
 }
