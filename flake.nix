@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, ... }: {
     nixosConfigurations = {
       plasma_home =
         nixpkgs.lib.nixosSystem {
