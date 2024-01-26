@@ -4,4 +4,5 @@
     enable = true;
     package = hyprland.packages.${pkgs.system}.hyprland;
   };
+  services.xserver.displayManager.sddm.enable = true;
 }
