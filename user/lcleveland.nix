@@ -8,6 +8,6 @@
 
   home-manager.users.lcleveland = {
     home.stateVersion = "23.11";
-    imports = [ ../home/app/. ];
+    imports = [ ../home/app/floorp ];
   };
 }
