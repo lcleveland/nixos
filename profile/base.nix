@@ -10,8 +10,8 @@
     ../user/lcleveland.nix
     ../system/state_version.nix
     ../system/home_manager.nix
-    ../app/git.nix
-    ../app/neovim.nix
+    ../system/app/git.nix
+    ../system/app/neovim.nix
   ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
