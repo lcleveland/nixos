@@ -15,7 +15,7 @@
 
   outputs = inputs@{ self, nixpkgs, home-manager, auto-cpufreq, ... }: {
     nixosConfigurations = {
-      nixos =
+      plasma_home =
         nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = inputs;
