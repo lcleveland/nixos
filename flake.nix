@@ -16,14 +16,16 @@
 
   outputs = inputs@{ self, nixpkgs, ... }: {
     nixosConfigurations = {
-      plasma_home =
-        nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = inputs;
-          modules = [
-            ./profile/plasma/home.nix
-          ];
-        };
+      plasma_home = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = inputs;
+        modules = [ ./profile/plasma/home.nix ];
+      };
+      hyprland_home = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = inputs;
+        modules = [ ./profile/hyprland/home.nix ];
+      };
     };
   };
 }
