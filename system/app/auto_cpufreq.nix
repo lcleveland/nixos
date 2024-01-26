@@ -1,4 +1,6 @@
 { config, pkgs, ... }:
 {
-  programs.auto-cpufreq.enable = true;
+  environment.systemPackages = [
+    pkgs.auto-cpufreq
+  ];
 }
