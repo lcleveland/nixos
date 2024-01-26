@@ -13,14 +13,13 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, auto-cpufreq, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
       plasma_home =
         nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = inputs;
           modules = [
-            home-manager.nixosModules.home-manager
             ./profile/plasma/home.nix
           ];
         };
