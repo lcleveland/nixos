@@ -1,5 +1,5 @@
-{ config, pkgs, ... }:
+{ config, pkgs, auto-cpufreq, ... }:
 {
-  imports = [ inputs.auto-cpufreq.nixosModules.default ];
+  imports = [ auto-cpufreq.nixosModules.default ];
   programs.auto-cpufreq.enable = true;
 }
