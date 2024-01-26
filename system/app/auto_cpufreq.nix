@@ -1,8 +1,5 @@
 { config, pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.auto-cpufreq
-  ];
-  services.auto-cpufreq.enable = true;
+  imports = [ auto-cpufreq.nixosModules.default ];
   programs.auto-cpufreq.enable = true;
 }
