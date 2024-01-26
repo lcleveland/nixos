@@ -12,6 +12,7 @@
     ../system/home_manager.nix
     ../system/app/git.nix
     ../system/app/neovim.nix
+    ../system/app/auto_cpufreq.nix
   ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
